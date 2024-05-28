@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://safi.me.uk/typewriterjs/js/typewriter.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+        }
+        body{
+            background-color: black;
+            text-align: center;
+            color:#fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+    <script>
+        var app = document.getElementById('app');
+
+        var typewriter = new Typewriter(app, { loop: true
+});
+
+        typewriter.typeString('Olá Mundo!')
+        .pauseFor(2000)
+        .deleteAll()
+        .typeString('Meu nome é Wendel Davy')
+        .pauseFor(2500)
+        .deleteAll()
+        .typeString('Sou academico de Analise e desenvolvimento de Sistema')
+        .start();
+
+    </script>
+</body>
+</html>
